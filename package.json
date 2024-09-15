@@ -1,0 +1,23 @@
+{
+  "name": "soccerscoreboard",
+  "version": "1.0.0",
+  "description": "application to provide scoreboard for kids soccer games ",
+  "main": "Main.js",
+  "dependencies": {
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSU-Devs/SoccerScoreboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FSU-Devs/SoccerScoreboard/issues"
+  },
+  "homepage": "https://github.com/FSU-Devs/SoccerScoreboard#readme"
+}

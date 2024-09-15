@@ -1,0 +1,486 @@
+
+body{
+    background-color: grey;
+    margin: 24px;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x:45%;
+    background-position-y:70%;
+    background-size: 95% 80%;
+    background-image: url('Images/soccerField.png');
+}
+/* This is the title of the first page */
+#title-block h1{
+    background-color: red;
+    border-radius: 8px;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+    height:15%;
+    max-width: 50%;
+    max-height: 15%;
+}
+/* This is the bar that's telling the user that the game is in progress */
+#in-progress h1{
+    background-color: red;
+    border-radius: 8px;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+    width: 25%;
+    height:10%;
+    max-width: 50%;
+    max-height: 15%;
+    position: absolute;
+    bottom: 2vh;
+    right: 0;
+    left: 0;
+}
+/* This is the bar that's telling the user that they are editing their game */
+#editing-progress h1{
+    background-color: red;
+    border-radius: 8px;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+    width: 25%;
+    height:7.5%;
+    max-width: 50%;
+    max-height: 15%;
+    position: absolute;
+    bottom: 2.5vh;
+    right: 0;
+    left: 0;
+}
+
+/*this is all for the going to the editing page button */
+
+#button-setup button{
+    display: inline-block;
+    position: absolute;
+    bottom: 15vh;
+    right:0;
+    left:0;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1%;
+    width: 15%;
+    height: 12%; 
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#button-setup button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#button-setup button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+
+#button-setup button:hover span{
+    padding-right: 25px;
+}
+
+
+#button-setup button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/*This button is for users who may have just came on to the site by searching it or 
+ via link, and wants to see what games are currently in progress */
+ #see-games button{
+    display: inline-block;
+    position: absolute;
+    bottom: 2.8vh;
+    right:0;
+    left:0;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    padding: 1%;
+    width: 10%;
+    height: 7%; 
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+ #see-games button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#see-games button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+
+#see-games button:hover span{
+    padding-right: 25px;
+}
+
+
+#see-games button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/*This is to design the back button (so it can go back
+to the home page */
+#button-back button{
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh;
+    left:0;
+    right:66%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 10%; 
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#button-back button:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+
+/*this is for the finish editing animation/design*/
+#finish-button button{
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh;
+    right:0;
+    left:66%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 10%; 
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#finish-button button:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+/*This is to design the back button (so it can go back
+to the home page */
+#button-back button{
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh;
+    left:0;
+    right:66%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 10%; 
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#button-back button:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+
+/*this is for the finish editing animation/design*/
+#finish-button button{
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh;
+    right:0;
+    left:66%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 10%; 
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#finish-button button:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+/*the next two stylings is for the soccer ball images */
+#soccerball-images img{
+    position: absolute;
+    top: 2vh;
+    left: 5%;
+    max-width: 10vw;
+    max-height: 10vh;
+    height: auto;   
+
+}
+
+
+#soccerball-images-two img{
+    position: absolute;
+    top: 2vh;
+    right: 5%;
+    max-width: 10vw;
+    max-height: 10vh;
+    height: auto;   
+}
+
+/*this styling code (below) is for the soccer team
+image */
+#soccerteam img{
+    position: absolute;
+    top: 25vh;
+    right: 37%;
+    max-width: 30vw;
+    max-height: 30vh;
+    height: auto;
+    
+}
+
+/*Placement of the Scoreboard */
+#app{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*Here is the code to design the scoreboard for the 
+"EditingPage.html" page */
+
+.scoreboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* repeat(2, 1fr) is the same as 1fr 1fr*/
+    width: 450px;
+    font-family:'Times New Roman', sans-serif;
+    font-size: medium;
+    background-color: #444;
+    transform: scale(1.4);
+}
+
+
+/*Here we will be setting common styles for the scoreboard name and 
+the scoreboard score, so we will call both classes at the same time */
+
+.scoreboard__name, 
+.scoreboard__score{
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Next we are only customizing the scoreboard name for
+the scoreboard */
+
+.scoreboard__name{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+
+/*Next, we are customizing the color of the name
+tags */
+
+.scoreboard__name--one{
+   
+    color: red;
+    
+}
+
+.scoreboard__name--two{
+   
+    color: rgb(47, 124, 240);
+    
+}
+
+
+/*Here we are customizing the actual score this time */
+
+.scoreboard__score{
+    font-size: 2em;
+    color: white;
+}
+
+/*Creating the control buttons for the number */
+
+.scoreboard__controls{
+    display: flex;
+}
+
+.scoreboard__control-button{
+    flex-grow: 1;
+    border: none;
+    background: rgb(197, 191, 191);
+    cursor: pointer;
+    font-size: 1.2 em;
+}
+
+
+.scoreboard__control-button:hover{
+    background: #ddd;
+}
+
+.scoreboard__control-button:active{
+    background: #ccc;
+}
+
+
+
+/*
+* Here will be the styling for the timer
+*
+*/
+
+.timer{
+    font-family: sans-serif;
+    display: inline-block; /*Will insure it will not take up the entire width of the page*/
+    padding: 24px 32px;
+    border-radius: 30px;
+    background: lightgrey;
+    position: absolute;
+    top: 70vh;
+    right: 38%;
+    max-width: 30vw;
+    max-height: 30vh;
+    height: auto;
+}
+
+
+/*this part we are targetting the timer parts, so the minute and sec part*/
+
+.timer__part{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.timer__btn{
+    width: 50px;
+    height: 50px;
+    margin-left: 16px; /*gives us space between the icon and next one */
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: purple;
+    cursor: pointer;
+}
+
+
+/*change for the start button*/
+
+.timer__btn--start{
+    background: limegreen;
+
+}
+
+/*change for the stop button now*/
+.timer__btn--stop{
+    background: red;
+}
+
+/*for the halves part */
+.timer__part--halves{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*here we are editing the share button*/
+.share__btn {
+    width: 50px;
+    height: 50px;
+   /* margin-left: 16px;*/ /*gives us space between the icon and next one */
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    top: 75vh;
+    left: 37%;
+    
+}
+
+.share__btn:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+
